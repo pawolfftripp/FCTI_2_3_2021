@@ -4,11 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //String name, int age, String location, String type, String color
+//String name, int age, String location, String type, String color
         Pet cat1 = new Pet("Odin", 7, "NC", "cat", "black");
         Pet cat2 = new Pet("Finley", 5, "NC", "cat", "orange");
 
-//Getters
+        Car car1 = new Car("Mazda", "Miata");
+
+//Getters for Cat Class
         System.out.println(cat1.getName());
         System.out.println(cat1.getAge());
         System.out.println(cat1.getLocation());
@@ -26,7 +28,8 @@ public class Main {
         cat2.returnAll();
         System.out.println();
         System.out.println();
-//Setters
+
+//Setters for Cat Class
         cat1.setName("Fauxdin");
         cat1.setAge(8);
         cat1.setLocation("SC");
@@ -42,5 +45,13 @@ public class Main {
         cat1.returnAll();
         System.out.println();
         cat2.returnAll();
+
+//Getter for Car Class
+        System.out.println();
+        System.out.println();
+        System.out.print(car1.isForcedInduction());
+        System.out.println();
+        car1.getDescription();
+
     }
 }
