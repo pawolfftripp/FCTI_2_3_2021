@@ -10,8 +10,8 @@ public class Main {
         Pet cat1 = new Pet("Odin", 7, "NC", "cat", "black");
         Pet cat2 = new Pet("Finley", 5, "NC", "cat", "orange");
 
-        Car car1 = new Car("Ford", "RS200");
-        Car engine1 = new Car(1803, 86,  77.62f, "INLINE", 4);
+        Car car1 = new Car("Mazda", "Miata");
+        Car car2 = new Car("Ford", "RS200",1803, 86,  77.62f, "INLINE", 4);
 
 //Getters for Cat Class
         System.out.println(cat1.getName());
@@ -55,7 +55,9 @@ public class Main {
         System.out.print(car1.getForcedInduction());
         System.out.println();
         car1.getDescription();
-        engine1.getEngine();
+        System.out.println();
+        car2.getEngine();
+
         car1.setBoostPressure(22.2f);
         car1.setTirePressure(35.0f);
 

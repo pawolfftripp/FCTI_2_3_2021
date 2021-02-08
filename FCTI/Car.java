@@ -115,7 +115,9 @@ public class Car {
     }
 
 //Constructor using 3 variables
-    public Car(int displacement, float bore, float stroke, String engine, int noCylinders) {
+    public Car(String make, String model, int displacement, float bore, float stroke, String engine, int noCylinders) {
+        this.make = make;
+        this.model = model;
         this.displacement = displacement;
         this.bore = bore;
         this.stroke = stroke;
